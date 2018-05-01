@@ -23,7 +23,6 @@ client.connect((err) => {
     if (err) {
       return console.error("error running query", err);
     }
-    // console.log(result.rows);
     cb(result.rows);
     client.end();
   });
